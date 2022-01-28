@@ -7,7 +7,8 @@
     "constructs": "bin/constructs.js"
   },
   "scripts": {
-    "cdk": "cdk",
+    "cdk": "cdk deploy",
+    "cdk-synth": "cdk synth",
     "clean": "rm -rf node_modules/ cdk.out/ coverage/ package-lock.json",
     "clean-synth": "npm run clean && npm install && npm run cdk synth --asset-metadata false --path-metadata false --json false",
     "pretest": "npm run clean && npm install",
